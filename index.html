@@ -39,35 +39,51 @@
 
 <body class="font-lato">
   <header>
-    <nav class="container mx-auto rounded-full  bg-[#F85559] my-10 ">
-      <div class="grid lg:grid-cols-3 items-center lg:py-5 lg:px-10 ">
+    <nav class=" p-2 lg:m-7 ">
+      <div class="navbar  lg:bg-[#F85559] flex justify-between lg:p-7 rounded-full">
+        <div class=" hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-white">
+            <li><a>Home</a></li>
+            <li><a href="">About Us </a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div>
+          <img src="images/logo.png" alt="">
+          <h3 class="text-4xl font-bold ml-3 lg:text-white">Fruit Burst</h3>
+        </div>
+        <div class="mr-7">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:text-white lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content  z-[1] p-2 shadow bg-base-100 rounded-box w-28 ">
+              <li><a>Home</a></li>
+              <li><a>About Us</a> </li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
 
-        <div class="flex text-lg font-normal text-white gap-7 ">
-          <p>Home</p>
-          <p>About Us</p>
-          <p>Shop</p>
-          <p>All Fruits</p>
         </div>
 
-        <div class="flex items-center gap-x-6">
-          <img src="resource/images/logo.png" alt="">
-          <h3>Fruit Burst</h3>
+
+        <div class="hidden w-96 h-14 bg-white rounded-full p-5  lg:flex">
+          <input type="search" name="" id="" class="w-80 h-12 rounded-full p-5 border-none outline-none text-[1.2rem]"
+            placeholder="Search here">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path
+              d="M18.9998 19L13.8028 13.803M13.8028 13.803C15.2094 12.3965 15.9996 10.4887 15.9996 8.49955C15.9996 6.51035 15.2094 4.60262 13.8028 3.19605C12.3962 1.78947 10.4885 0.999268 8.49931 0.999268C6.51011 0.999268 4.60238 1.78947 3.19581 3.19605C1.78923 4.60262 0.999023 6.51035 0.999023 8.49955C0.999023 10.4887 1.78923 12.3965 3.19581 13.803C4.60238 15.2096 6.51011 15.9998 8.49931 15.9998C10.4885 15.9998 12.3962 15.2096 13.8028 13.803Z"
+              stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
         </div>
-        <div class="flex  items-center rounded-md shadow-md p-2 w-80 h-12 bg-white rounded-">
-
-          <input type="text" placeholder="Search here " class=" w-[148px] border-2 border-none ">
-          <i class="fa-solid fa-magnifying-glass border-2 "></i>
-
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-      </svg> -->
-
-
-        </div>
-
       </div>
-
     </nav>
+
     <!-- banner section start -->
     <section class="max-w-screen-xl mx-auto">
 
@@ -574,46 +590,131 @@
     <!-- Team section  end-->
 
     <!-- why choose section started -->
-    <section>
+    <section class="max-w-screen-xl mx-auto my-6 py-28">
 
       <div class="text-center">
         <h3 class="text-5xl font-bold ">Why Choose Us</h3>
-        <p class="text-base font-normal  ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        <p class="text-base font-normal  ">Contrary to popular belief, is not simply random text. It has roots in a
+          piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
       </div>
+
+      <div class="grid lg:grid-cols-3 mt-6">
+
+        <!-- right side content -->
+        <div class=" space-y-12">
+          <div class="flex gap-4 text-left gap-6">
+            <div class="">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <div>
+              <h3>Dedicated Team</h3>
+              <hr>
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 text-center text-left">
+            <div class="">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <div>
+              <h3>Dedicated Team</h3>
+              <hr>
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 text-center text-left">
+            <div class="">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <div>
+              <h3>Dedicated Team</h3>
+              <hr>
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- image -->
+        <div>
+          <img src="resource/images/whychoose1.png" alt="">
+        </div>
+        <!-- left side content -->
+        <div class="">
+          <div class="flex gap-4 text-center text-right">
+            <div>
+              <h3>Dedicated Team</h3>
+              <hr>
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+            <div class="">
+              <i class="fa-solid fa-people-group "></i>
+            </div>
+          </div>
+
+          <div class="flex gap-4 text-center text-right">
+
+            <div>
+              <h3>Dedicated Team</h3>
+              <hr>
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+            <div class="">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+          </div>
+
+          <div class="flex gap-4 text-center text-right">
+
+            <div>
+              <h3>Dedicated Team</h3>
+              <hr>
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+            <div class="">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
+
   </main>
 
+  <!-- footer section start -->
   <footer class="bg-black mt-7 px-9 py-9 lg:py-32 space-y-6">
-      <div class="flex items-center  justify-center">
-        <img src="resource/images/logo.png" alt="">
-         <p class="text-4xl font-bold text-white">Fruit Burst</p>
-      </div>
-      <div class="flex gap-5 justify-center text-base text-white flex-wrap">
-        <p>Home</p>
-        <p>About Us</p>
-        <p>Shop</p>
-        <p>All Fruits</p>
-        <p>Support</p>
-        <p>My Account</p>
-      </div>
-      <div class="flex justify-center gap-8 text-2xl text-white">
+    <div class="flex items-center  justify-center">
+      <img src="resource/images/logo.png" alt="">
+      <p class="text-4xl font-bold text-white">Fruit Burst</p>
+    </div>
+    <div class="flex gap-5 justify-center text-base text-white flex-wrap">
+      <p>Home</p>
+      <p>About Us</p>
+      <p>Shop</p>
+      <p>All Fruits</p>
+      <p>Support</p>
+      <p>My Account</p>
+    </div>
+    <div class="flex justify-center gap-8 text-2xl text-white">
 
-        <p><i class="fa-brands fa-facebook"></i></p>
+      <p><i class="fa-brands fa-facebook"></i></p>
 
-        <p><i class="fa-brands fa-apple"></i></p>
+      <p><i class="fa-brands fa-apple"></i></p>
 
-        <p><i class="fa-brands fa-twitter"></i></p>
+      <p><i class="fa-brands fa-twitter"></i></p>
 
-        <p><i class="fa-brands fa-youtube"></i></p>
+      <p><i class="fa-brands fa-youtube"></i></p>
 
-        <p><i class="fa-brands fa-linkedin"></i></p>
+      <p><i class="fa-brands fa-linkedin"></i></p>
 
-        <p><i class="fa-brands fa-instagram"></i></p>
+      <p><i class="fa-brands fa-instagram"></i></p>
 
-        
 
-     
-      </div>
+
+
+    </div>
   </footer>
 </body>
 
